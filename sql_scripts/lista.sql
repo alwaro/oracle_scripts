@@ -1,0 +1,1 @@
+select SID,SERIAL#,USERNAME,OSUSER,MACHINE,PROGRAM,EVENT from v$session where sid=87;

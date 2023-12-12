@@ -1,0 +1,4 @@
+SET SQLFORMAT csv
+select owner, segment_name,segment_type,PARTITION_NAME,tablespace_name, bytes/1024/1024 AS MB from dba_segments where owner not in ('SYS','SYSTEM','OUTLN','DIP','ANONYMOUS','ORACLE_OCM','DBSNMP','APPQOSSYS','WMSYS','XDB','XS$NULL','SYSRAC','SYSBACKUP','AUDSYS','SYSDG','SYSKM','GSMADMIN_INTERNAL','GGSYS','GSMUSER','REMOTE_SCHEDULER_AGENT','DBSFWUSER','SYS$UMF','GSMCATUSER','OJVMSYS','ORDSYS','ORDDATA','CTXSYS','APEX_050000','MDSYS') order by bytes desc;
+exit;
+
