@@ -2,7 +2,7 @@
 -- NAME: def_table_full.sql
 -- DESCRIPTION: Show info of table
 -- USAGE: Specify table
--- AUTHOR:
+-- AUTHOR: Alvaro Anaya
 -- ---------------------------------------------------------------
 set lines 200
 col owner format a15
